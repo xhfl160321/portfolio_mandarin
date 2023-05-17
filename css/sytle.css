@@ -1,0 +1,462 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::before,
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+a,
+p {
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    color: #222526;
+    /*   color: #A62F00 :  point color*/
+}
+
+font {
+    font-family: 'Abril Fatface', cursive;
+    /* 두툼한 폰트 */
+    font-family: 'Delicious Handrawn', cursive;
+    /* 아기자기 손글씨 폰트 */
+    font-family: 'Lobster', cursive;
+    /* 제목 폰트 */
+    font-family: 'Roboto Mono', monospace;
+    /* 매끄러운 폰트 */
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+/********** page custom  **********/
+#wrap {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(242, 135, 5, 0.05) 50%, rgba(242, 135, 5, 0.3) 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#page {
+    width: 85%;
+    height: 95%;
+    margin: 1.5%;
+    position: relative;
+    /*   background: pink; */
+}
+
+/********** page1Wrap  **********/
+#page1Wrap {
+    width: 100%;
+    height: 950px;
+    /*   background: green; */
+}
+
+/***** p1 메뉴 및 로고 *****/
+header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /*   background: pink; */
+}
+
+/* 메뉴 태그 호버 시 그라디언트 컬러 이벤트 */
+header a {
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 1em;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background: linear-gradient(to right,
+            #D76703,
+            #D76703 50%,
+            #222526 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.8s ease;
+}
+
+header a:hover {
+    background-position: 0 100%;
+}
+
+header p {
+    padding: 4%;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+}
+
+/***** p1 설명 및 그림 *****/
+.p1Mid {
+    width: 100%;
+    height: 80%;
+    margin-top: 2%;
+    /*   background: lightpink; */
+}
+
+.p1Con {
+    float: left;
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /*   background: lime; */
+}
+
+.p1Con p:first-child {
+    width: 60%;
+    height: 35%;
+    text-align: right;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    margin-top: 25%;
+
+}
+
+.p1Con p:last-child {
+    width: 125px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D76703;
+    margin-top: 5%;
+}
+
+.p1Con a {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.8em;
+    color: #F0F0F2;
+    letter-spacing: 0.2em;
+}
+
+.p1Img {
+    float: right;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    /*   background: limegreen; */
+}
+
+.p1Img img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-15%);
+}
+
+/********** page2Wrap  **********/
+#page2Wrap {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*   background: lightgreen; */
+}
+
+.p2Mid {
+    width: 90%;
+    height: 95%;
+    /*   background: red; */
+}
+
+.p2Mid .img {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /*   background: green; */
+}
+
+.p2Mid .img .imgtext {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    /*   background: pink; */
+}
+
+.p2Mid .img .imgtext span {
+    font-size: 3.5em;
+    font-family: 'Lobster', cursive;
+    color: #A62F00;
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+}
+
+.p2Mid .img .imgtext img {
+    width: 350px;
+    height: 550px;
+    object-fit: cover;
+    top: 30px;
+    position: absolute;
+    filter: grayscale(1);
+    transition: filter 0.3s linear;
+}
+
+.p2Mid .img .imgtext img:hover {
+    filter: grayscale(0);
+}
+
+.vLine {
+    border-left: 1px solid #222526;
+    height: 50px;
+    position: absolute;
+    left: 60px;
+    bottom: -20px;
+}
+
+.p2Mid .img .imgtext p {
+    width: 250px;
+    left: 45px;
+    bottom: -125px;
+    position: absolute;
+}
+
+/********** page3Wrap  **********/
+#page3Wrap {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*   background: green; */
+}
+
+.p3Mid {
+    width: 70%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*   background: pink; */
+}
+
+.p3Mid .p3Con1,
+.p3Mid .p3Con3 {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    /*   background: red; */
+}
+
+.p3Mid .p3Con1 p,
+.p3Mid .p3Con3 p {
+    font-size: 5em;
+    font-family: 'Lobster', cursive;
+    /* 제목 폰트 */
+    color: #A62F00;
+}
+
+.p3Mid .p3Con2 {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*   background: yellow; */
+}
+
+.p3Mid .p3Con2 p {
+    font-family: 'Abril Fatface', cursive;
+    /* 두툼한 폰트 */
+    font-size: 1.2em;
+    line-height: 1.8em;
+    padding-bottom: 5%;
+}
+
+.p3Mid .p3Con2 span {
+    font-family: 'Roboto Mono', monospace;
+    /* 매끄러운 폰트 */
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+}
+
+/********** page4Wrap  **********/
+#page4Wrap {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    /*   background: lightgreen; */
+}
+
+.p4Mid {
+    width: 100%;
+    height: 95%;
+    /*   background: pink; */
+}
+
+.p4Img {
+    float: left;
+    width: 60%;
+    height: 90%;
+    overflow: hidden;
+    position: relative;
+    /*   background: limegreen; */
+}
+
+.p4Img img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-20%);
+}
+
+.p4Con {
+    float: right;
+    width: 38%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.p4Con p:first-child {
+    width: 60%;
+    height: 35%;
+    text-align: left;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    margin-top: 25%;
+
+}
+
+.p4Con p:last-child {
+    width: 125px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D76703;
+    margin-top: 5%;
+}
+
+.p4Con a {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.8em;
+    color: #F0F0F2;
+    letter-spacing: 0.2em;
+}
+
+/********** page5Wrap  **********/
+#page5Wrap {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*   background: green; */
+}
+
+/***** 이미지 배너 무한 슬라이드 *****/
+.banner {
+    width: 100%;
+    height: 50%;
+    /*   border: 1px solid #ccc; */
+    overflow: hidden;
+    padding-left: 0;
+}
+
+.banner ul {
+    width: 300%;
+    position: relative;
+    left: -300px;
+}
+
+.banner ul li {
+    float: left;
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.banner ul li img {
+    width: 100%;
+    height: 105%;
+    object-fit: cover;
+}
+
+/***** 이미지 밑 메뉴 및 아이콘 *****/
+#page5Wrap .menu {
+    margin-top: 2%;
+    width: 95%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /*   background: red; */
+}
+
+#page5Wrap .menu ul {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#page5Wrap .menu ul li {
+    float: left;
+    padding: 3%;
+    font-size: 1em;
+}
+
+#page5Wrap .menu ul .icon {
+    float: left;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#page5Wrap .menu ul .icon img{
+    width: 25px;
+    height: 25px;
+    padding: 7%;
+    display: block;
+}
+
+#page5Wrap .copyright {
+    width: 95%;
+    height: 8%;
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 2%;
+    /*   background: blue; */
+}
