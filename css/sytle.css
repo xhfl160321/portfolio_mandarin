@@ -1,6 +1,12 @@
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 .clearfix::before,
@@ -187,6 +193,7 @@ header p {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin-top: 5%;
     /*   background: green; */
 }
 
@@ -228,13 +235,13 @@ header p {
     border-left: 1px solid #222526;
     height: 50px;
     position: absolute;
-    left: 60px;
+    left: 80px;
     bottom: -20px;
 }
 
 .p2Mid .img .imgtext p {
     width: 250px;
-    left: 45px;
+    left: 60px;
     bottom: -125px;
     position: absolute;
 }
@@ -445,7 +452,8 @@ header p {
     justify-content: center;
     align-items: center;
 }
-#page5Wrap .menu ul .icon img{
+
+#page5Wrap .menu ul .icon img {
     width: 25px;
     height: 25px;
     padding: 7%;
